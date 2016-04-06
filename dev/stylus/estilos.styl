@@ -1,32 +1,38 @@
 @import "nib"
 @import "normalize.styl"
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,400italic,300')
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,300')
 
 // /*ICONOS COMO FUENTES*/
-// @import "iconfonts.styl"
+@import "iconfonts.styl"
 
 /*
 * Fuente Century Ghotic
 */
 
-// @font-face
-// 	font-family "Century-bold"
-// 	src url(../fonts/century-gothic-bold.ttf)
+@font-face
+	font-family "Century-bold"
+	src url(../fonts/century-gothic-bold.ttf)
 	
-// @font-face
-// 	font-family "Century"
-// 	src url(../fonts/century-gothic.ttf)
+@font-face
+	font-family "Century"
+	src url(../fonts/century-gothic.ttf)
 
 $white = #FFF
 
 $black = #000
 
+$gray = #999998
+$light_gray = #EDEDEE
+$light_gray2 = #999998
+
 html
 	font-size 16px
-	font-family 'Lato', sans-serif /* Fuente de google fonts */
+	font-family 'Raleway', sans-serif /* Fuente de google fonts */
+	height 100%
 
 body
-	background-color red
+	background $white
+	height 100%
 	
 img
 	max-width 100%
@@ -41,7 +47,10 @@ a
 	text-align center
 	
 /*HEADER*/
-// @import "../components/Header/estilos.styl"
+@import "../components/Header/estilos.styl"
+
+/*FOOTER*/
+@import "../components/Footer/estilos.styl"
 
 
 /*OWL CAROUSEL*/

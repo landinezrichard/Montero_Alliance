@@ -1,0 +1,32 @@
+/*HEADER*/
+
+.Header
+	display inline-block
+	width 100%
+	background $black
+	color $white
+	
+	&-logo
+		display inline-block
+		float left
+		margin .5em 1em
+	&-menu
+		display inline-block
+		float right
+		
+	&-menuList
+		display inline-block
+		margin .5rem 0
+		padding 0
+		list-style none
+		font-size 0
+	&-menuItem
+		display inline-block
+		border-right 1px solid $gray
+		padding 0 1.8em
+		height 55px
+		line-height 55px
+		font-size 1.12rem
+		
+		&:last-child
+			border-right none
