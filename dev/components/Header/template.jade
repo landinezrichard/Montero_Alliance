@@ -1,14 +1,24 @@
 header.Header
-	div.Header-logo
+	a.Header-logo(href="index.html")
 		img.Header-logoImage(src="../images/index/logo-montero-allianz-letras.png")
 	nav.Header-menu
+		div.Header-mobile
+			span.icon-share2.Header-mobileRedes
+			span.icon-menu.Header-mobileMenu
 		ul.Header-menuList
 			li.Header-menuItem
 				a.Header-menuLink(href="quienes.html")
 					|	Quiénes somos
 			li.Header-menuItem
-				a.Header-menuLink
+				a.Header-menuLink(href="responsabilidad.html")
 					|	Responsabilidad social empresarial
 			li.Header-menuItem
-				a.Header-menuLink
+				a.Header-menuLink(href="contacto.html")
 					|	Contáctenos
+		div.Header-redes
+			a.Header-redesIcon(href="#",target="_blank")
+				span.icon-facebook
+			a.Header-redesIcon(href="#",target="_blank")
+				span.icon-twitter
+			a.Header-redesIcon(href="#",target="_blank")
+				span.icon-google-plus
