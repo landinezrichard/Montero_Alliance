@@ -1,0 +1,110 @@
+/*PANELS*/
+.Panels
+	display inline-block
+	width 100%
+	// margin-top 59px
+	margin-top 4%
+	height 92%
+	background $black
+	float left
+	&-list
+		display flex
+		// display inline-block
+		width 100%		
+		align-items stretch
+		height 100%
+		float left
+	&-item
+		display inline-block
+		position relative
+		float left
+		text-align center
+		width 100%
+		height 100%
+		perspective 1000
+		margin-right 1px
+		&:hover .Panels-hover
+			transform rotateY(180deg)
+		&:last-child
+			margin-right 0
+	&-hover
+		position relative
+		transform-style preserve-3d		
+		transition .6s
+		width 100%
+		height 100%
+	&-front
+	&-back
+		position absolute
+		top 0
+		left 0
+		backface-visibility hidden
+		width 100%
+		height 100%
+	&-front		
+		z-index 8
+		transform rotateY(0deg)		t
+		
+	&-back
+		transform rotateY(180deg)
+		
+	&-link
+		display inline-block
+		position absolute
+		bottom 0
+		left 0
+		right 0
+		color $white
+		background $transparent_black3
+		font-weight 300
+		font-size 1.68em
+		width 290px
+		height 73px
+		line-height 73px
+		margin 40px auto
+		
+	#panel-1 .Panels-front
+	#panel-1 .Panels-back
+		background url("../images/index/panel-1.jpg") center
+		background-size 100%
+		
+	#panel-2 .Panels-front
+	#panel-2 .Panels-back
+		background url("../images/index/panel-2.jpg") center
+		background-size 100%
+		
+	#panel-3 .Panels-front
+		background url("../images/index/panel-3.jpg") center
+		background-size 100%
+		
+	#panel-3 .Panels-back
+		background url("../images/index/panel-3-hover.jpg") center
+		background-size 100%
+		
+	#panel-4 .Panels-front
+		background url("../images/index/panel-4.jpg") center
+		background-size 100%
+		
+	#panel-4 .Panels-back
+		background url("../images/index/panel-4-hover.jpg") center
+		background-size 100%
+		
+	#panel-5 .Panels-front
+		background url("../images/index/panel-5.jpg") center
+		background-size 100%
+	
+	#panel-5 .Panels-back
+		background url("../images/index/panel-5-hover.jpg") center
+		background-size 100%
+	
+	#panel-6 .Panels-front
+		background url("../images/index/panel-6.jpg") center
+		background-size 100%
+	#panel-6 .Panels-back
+		background url("../images/index/panel-6-hover.jpg") center
+		background-size 100%
+		
+/*Tablet Landscape*/
+@media screen and (min-width:1024px)
+	.Panels
+		margin-top 75px

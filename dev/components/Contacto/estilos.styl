@@ -1,0 +1,108 @@
+/*CONTACTO*/
+.Contacto
+	display inline-block
+	width 100%
+	background $black url("../images/contacto/fondo.jpg") center top
+	background-repeat no-repeat
+	background-size cover
+	margin-top 59px
+	float left
+	text-align center
+	
+	&-right
+		display inline-block
+		background $transparent_black2
+		width 95%		
+	
+	&-form
+		display inline-block
+		width 100%
+		text-align left
+		// padding 20px 10px
+		box-sizing border-box		
+	&-titleContainer
+		text-align center
+	&-mainTitle
+		color $white
+		font-size 2em !important		
+	&-titleBorde
+		background $white		
+		
+	&-field
+	&-buttonContainer
+	&-checkContainer
+	&-textAreaContainer
+		margin 0
+		padding 0
+		border none
+	&-field
+		width 44%
+		display inline-block
+		margin 15px 2.5%		
+	&-label
+		text-transform uppercase
+		margin .3em 0
+		font-weight 400
+		font-size 1.12em
+		color $white
+		display inline-block
+	&-input
+		width 100%
+		height 26px
+		border none
+		border-bottom 1px solid $transparent_white
+		padding .2em
+		background transparent
+		color $white
+		
+	&-textAreaContainer
+		width 95%
+		margin 20px 2.5%
+		
+	&-textArea
+		width 98%
+		min-height 188px
+		resize none
+		padding .2em
+		background transparent
+		border none
+		border 1px solid $transparent_white
+		color $white
+		
+	&-buttonContainer
+		display inline-block
+		width 100%
+		text-align center
+		margin 20px 0
+	&-button		
+		background $black
+		font-weight 400
+		font-size 1.37em
+		color $white
+		width 193px
+		height 52px
+		line-height 52px		
+		border none
+		margin 10px 2.5%
+/*Tablet Landscape*/
+@media screen and (min-width:1024px)
+	.Contacto
+		margin-top 75px
+		&-mainTitle
+			font-size 2.5em !important
+		&-form
+			width 510px
+			height 100%
+		&-right
+			float right
+			width 55%
+
+@media screen and (min-width:1280px)
+	.Contacto		
+		&-right
+			min-height 770px		
+@media screen and (min-width:1440px)
+	.Contacto
+		&-form
+			margin 95px 120px
+			float left
