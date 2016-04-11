@@ -14,8 +14,15 @@
 	&-logo
 		display inline-block
 		float left		
-		margin .5em		
-		width 230px
+		margin .5em	0	
+		width 200px
+		background url("../images/index/logo-montero-allianz-letras.png") center no-repeat
+		background-size 100%
+		font-size 1.6em
+	&-logoImg
+		display inline-block
+		text-indent -9999px
+		width 100%
 	&-menu
 		display inline-block
 		float right
@@ -31,10 +38,14 @@
 		cursor pointer
 		margin 0 .5rem
 		
+	&-mobileRedes
+		font-size 1.8rem
+		
 	&-menuList
 		display none
 		// display inline-block
-		margin .5rem 0
+		// margin .5rem 0
+		margin 0		
 		padding 0
 		list-style none
 		font-size 0
@@ -75,10 +86,14 @@
 		margin 0 .3em
 /*Tablet Landscape*/
 @media screen and (min-width:1024px)
-	.Header		
+	.Header	
+		height 75px
+		line-height 75px
 		&-logo			
-			margin .5em 1em			
-			width auto
+			// margin .5em 1em
+			margin 0 1em
+			width 337px
+			// width auto
 		&-mobile
 			display none
 		&-redes		
