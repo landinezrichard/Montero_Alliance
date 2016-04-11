@@ -2,11 +2,11 @@ $(document).ready(function() {
 
 	/*Funcionalidades Menu*/
 
-	var menus = ['.Menu','.Header-redes'];
+	var menus = ['.Menu-index','.Header-redes'];
 
 	/*Mostrar menu mobile*/
 	$('.Header-mobileMenu').click(function(){
-		mostrarOcultar('.Menu');
+		mostrarOcultar('.Menu-index');
 	});
 
 	/*Mostrar redes*/

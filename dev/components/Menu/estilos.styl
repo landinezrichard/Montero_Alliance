@@ -12,7 +12,17 @@
 	z-index 9
 	height 85%
 	overflow-y auto
-
+	/*Menu solo para el index*/
+	&-index
+		display none
+		width 100%
+		background $black
+		position fixed
+		top 59px
+		left 0
+		z-index 9
+		height 85%
+		overflow-y auto
 	&-list
 		margin 0
 		padding 0
@@ -44,6 +54,10 @@
 		z-index inherit
 		height auto
 		overflow inherit
+		
+		/*Menu solo para el index*/
+		&-index
+			display none
 		&-list			
 			display flex
 		&-item
@@ -58,3 +72,6 @@
 			display none
 		&-link		
 			font-size 1.68em
+			transition all .3s
+			&:hover
+				font-weight 700

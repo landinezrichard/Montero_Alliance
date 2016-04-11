@@ -10,23 +10,21 @@
 	&-list
 		display flex
 		// display inline-block
-		width 100%		
+		width 100%
 		align-items stretch
 		height 100%
 		float left
+		flex-flow column nowrap
 	&-item
 		display inline-block
 		position relative
 		float left
 		text-align center
 		width 100%
-		height 100%
-		perspective 1000
-		margin-right 1px
-		&:hover .Panels-hover
-			transform rotateY(180deg)
+		height 200px
+		margin-bottom 1px		
 		&:last-child
-			margin-right 0
+			margin-bottom 0
 	&-hover
 		position relative
 		transform-style preserve-3d		
@@ -57,54 +55,118 @@
 		color $white
 		background $transparent_black3
 		font-weight 300
-		font-size 1.68em
-		width 290px
+		font-size 1.48em
+		// width 290px
+		width 50%
 		height 73px
 		line-height 73px
-		margin 40px auto
+		margin 20px auto
 		
+#panel-1 .Panels-front
+	background url("../images/puertos/banner-2.jpg") center
+	background-size cover
+	
+#panel-2 .Panels-front
+	background url("../images/puertos/banner-2.jpg") center
+	background-size cover
+	
+#panel-3 .Panels-front
+	background url("../images/mineria/banner.jpg") center
+	background-size cover	
+	
+#panel-4 .Panels-front
+	background url("../images/oleoducto/banner.jpg") center
+	background-size cover
+	
+#panel-5 .Panels-front
+	background url("../images/refineria/banner.jpg") center
+	background-size cover
+
+#panel-6 .Panels-front
+	background url("../images/refineria/banner.jpg") center
+	background-size cover
+		
+@media screen and (min-width:840px)
+	.Panels		
+		&-list
+			display flex
+			width 100%
+			align-items stretch
+			height 100%
+			float left
+			flex-flow row nowrap
+		&-item
+			display inline-block
+			position relative
+			float left
+			text-align center
+			width 100%
+			height 100%
+			perspective 1000
+			margin-right 1px
+			margin-bottom 0
+			&:hover .Panels-hover
+				transform rotateY(180deg)
+			&:last-child
+				margin-right 0
+								
+		&-link			
+			width 90%
+			transition all .6s
+			&:hover
+				height 145px
+				line-height 145px
+				margin 5px auto	
+			
 	#panel-1 .Panels-front
 	#panel-1 .Panels-back
 		background url("../images/index/panel-1.jpg") center
-		background-size 100%
+		// background-size 100%
+		background-size cover
 		
 	#panel-2 .Panels-front
 	#panel-2 .Panels-back
 		background url("../images/index/panel-2.jpg") center
-		background-size 100%
+		background-size cover
 		
 	#panel-3 .Panels-front
 		background url("../images/index/panel-3.jpg") center
-		background-size 100%
+		background-size cover
 		
 	#panel-3 .Panels-back
 		background url("../images/index/panel-3-hover.jpg") center
-		background-size 100%
+		background-size cover
 		
 	#panel-4 .Panels-front
 		background url("../images/index/panel-4.jpg") center
-		background-size 100%
+		background-size cover
 		
 	#panel-4 .Panels-back
 		background url("../images/index/panel-4-hover.jpg") center
-		background-size 100%
+		background-size cover
 		
 	#panel-5 .Panels-front
 		background url("../images/index/panel-5.jpg") center
-		background-size 100%
+		background-size cover
 	
 	#panel-5 .Panels-back
 		background url("../images/index/panel-5-hover.jpg") center
-		background-size 100%
+		background-size cover
 	
 	#panel-6 .Panels-front
 		background url("../images/index/panel-6.jpg") center
-		background-size 100%
+		background-size cover
 	#panel-6 .Panels-back
 		background url("../images/index/panel-6-hover.jpg") center
-		background-size 100%
-		
+		background-size cover
+
 /*Tablet Landscape*/
 @media screen and (min-width:1024px)
 	.Panels
+		position relative
+		z-index 11
 		margin-top 75px
+		&-link
+			font-size 1.68em
+			width 90%
+			margin 40px auto

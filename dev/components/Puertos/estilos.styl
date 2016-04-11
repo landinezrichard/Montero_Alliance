@@ -102,6 +102,62 @@
 	&-listItem p
 		color $gray2
 		margin 0
+	/*Lineas en el logo*/
+	&-fancy
+		display inline-block
+		// width 100%
+		width 225px
+		text-align center
+		position relative
+		&:hover
+			.Puertos-line1
+			.Puertos-line2
+			.Puertos-line3
+				opacity 0.8
+			.Puertos-line1
+			.Puertos-line2
+				width 170px
+			.Puertos-line3
+				width 255px
+	&-line1
+		background $gray4
+		display inline-block
+		width 120px
+		height 1px
+		transform rotate(120deg)
+		position absolute
+		// top 300px
+		// left 68px
+		top 77%
+		left -18%
+		opacity 0.4
+		transition all .3s
+	&-line2
+		background $gray4
+		display inline-block
+		width 120px
+		height 1px
+		transform rotate(120deg)
+		position absolute
+		// top 72px
+		// left 200px
+		top 18%
+		left 42%
+		opacity 0.4
+		transition all .3s
+	&-line3
+		background $gray4
+		display inline-block
+		width 200px
+		height 1px
+		transform rotate(240deg)
+		position absolute
+		// top 164px
+		// left 126px
+		top 38%
+		left 5%
+		opacity 0.4
+		transition all .3s
 /*Tablet Landscape*/
 @media screen and (min-width:1024px)
 	.Puertos
