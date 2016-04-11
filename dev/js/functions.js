@@ -23,4 +23,23 @@ $(document).ready(function() {
 		$(elemento).slideToggle();
 	}
 
+	/*Scroll Reveal*/
+
+	window.sr = ScrollReveal();
+
+	/*Puertos*/
+	sr.reveal('.Puertos-description');
+	sr.reveal('.Puertos-title');
+	sr.reveal('.Puertos-desc2');
+	sr.reveal('.Puertos-listItem');
+
+	/*Social*/
+	sr.reveal('.Social-item');
+	sr.reveal('.Social-title');
+	sr.reveal('.Social-desc2');
+
+	/*Footer*/
+	sr.reveal('.Footer-redes .icon-facebook',50);
+	sr.reveal('.Footer-redes .icon-twitter',50);
+	sr.reveal('.Footer-redes .icon-google-plus',50);
 });
