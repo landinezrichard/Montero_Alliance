@@ -23,4 +23,14 @@ $(document).ready(function() {
 		$(elemento).slideToggle();
 	}
 
+	/*Scroll Reveal*/
+
+	window.sr = ScrollReveal();
+
+	/*Header Menu*/
+	sr.reveal('.Header-menuItem',{origin:'right',distance:'320px'},400);
+
+	/*Paneles Index*/
+	sr.reveal('.Panels-item',{origin:'right',distance:'320px'},200);	
+
 });
